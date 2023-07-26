@@ -117,40 +117,56 @@
 
   <!-- <section class="flex  lg:text-start  justify-around  my-20 space-x-5" > -->
 
-    <section class=" text-center lg:text-start mt-24 lg:flex p- justify-around  my-20 space-x-5" ></section>
+    <section class=" justify-between m-24 lg:flex p-5 lg:p-0 max-w-screen-lg mx-auto" >
 
 
 
-    <div class="space-y-2">
+    <div class="">
       <h3 class="text-[#121212] text-4xl font-extrabold">Deal of the day</h3>
       <p class="text-sm font-medium ]">Contrary to popular belief, is not simply random text. It has roots <br> in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
     </div>
-
-     <div class="flex space-x-8" >
-
-      <div class="">
-        <h1 class="text-[#121212] text-4xl font-extrabold"> 29 <span class="text-xl">:</span> </h1>
-        <p class="text-sm">Days</p>
-    </div>
-
+      
     <div>
-        <h1 class="text-[#121212] text-4xl font-extrabold "> 15 <span class="text-xl">:</span></h1>
-        <p class="text-sm">Hours</p>
-    </div>
 
-    <div>
-        <h1 class="text-[#121212] text-4xl font-extrabold "> 25 <span class="text-xl">:</span></h1>
-        <p class="text-sm">Minutes</p>
-    </div>
+      <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+      <div class="flex flex-col">
+        <span class=" font-lato text-5xl">
+          <span style="--value:29;"></span>
+          29 <span class=" text-lg font-extrabold" >:</span>
+        </span>
+        days
+      </div> 
 
-    <div>
-        <h1 class="text-[#121212] text-4xl font-extrabold "> 08 </h1>
-        <p class="text-sm">Seconds</p>
+      <div class="flex flex-col">
+        <span class=" font-lato text-5xl">
+          <span style="--value:29;"></span>
+          15 <span class="text-lg font-extrabold">:</span>
+        </span>
+        Hours
+      </div> 
+
+      <div class="flex flex-col">
+        <span class=" font-lato text-5xl">
+          <span style="--value:29;"></span>
+          25 <span class="text-lg font-extrabold">:</span>
+        </span>
+        Minutes
+      </div> 
+
+      <div class="flex flex-col">
+        <span class=" font-lato text-5xl">
+          <span style="--value:29;"></span>
+          25 <span class="text-lg"> </span>
+        </span>
+        Seconds
+      </div>
+
     </div>
-    
 
 
        </div>
+
+      </div>
     
   </section>
      
@@ -172,7 +188,7 @@
           <p>Apples</p>
           <div class="rating">
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -283,15 +299,8 @@
       </div>
     </div>
 
-    
-
   </div>
-
   
-
-  
-  
-
   </main>
 
 
@@ -299,7 +308,8 @@
 
 
 
-    <footer class="footer  footer-center p-10 bg-[#121212] text-base-content rounded my-t-25">
+            <footer class="footer  footer-center p-10 bg-[#121212] text-base-content rounded 
+            my-t-25 grid grid-cols-1  ">
           
             <div class=" flex space-x-2 items-center"> 
               <img class="w-8" src="./images/logo.png" alt="">
@@ -307,15 +317,15 @@
               <h3 class=" text-[#FFF] text-2xl font-semibold ">Fruit Burst</h3>
               </div> 
 
-        <div class="grid grid-flow-col my-5 space-x-5">
-          <a class=" text-[#FFF]">Home</a> 
-          <a class=" text-[#FFF]">About Us</a> 
-          <a class=" text-[#FFF]">Shop</a> 
-          <a class=" text-[#FFF]">All Fruits</a>
-          <a class=" text-[#FFF]">Support</a>
-          <a class=" text-[#FFF]">My Account</a>
-        </div> 
-        <div>
+          <div class="grid grid-flow-col my-5 space-x-5">
+            <a class=" text-[#FFF]">Home</a> 
+            <a class=" text-[#FFF]">About Us</a> 
+            <a class=" text-[#FFF]">Shop</a> 
+            <a class=" text-[#FFF]">All Fruits</a>
+            <a class=" text-[#FFF]">Support</a>
+            <a class=" text-[#FFF]">My Account</a>
+          </div> 
+          <div>
 
           <div class="grid grid-flow-col gap-4 text-[#FFF]">
             <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
