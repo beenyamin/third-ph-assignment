@@ -10,6 +10,22 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+
+                backgroundimage:{
+                    'banner-img':"url('./images/banner1.png')"
+                }
+            }
+            }
+          }
+    
+      </script>
+
+
+
     <!-- google font lato -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,54 +48,146 @@
 <body class="font-lato" >
 
 
-      <!-- nav section start -->
+     
 
-    <nav>
-
-        <section class="bg-[#F85559] max-w-screen-l mx-auto my-8 py-5 px-8 md:px-16 lg:px-24 flex ">
-
-            <div>
-                
-                <div class="flex">
-                <li> Home</li>
-                   <li>About Us</li>
-                   <li>Shop</li>
-                   <li>All Fruits</li>
-                 </div>
-                
-                 
-            
-            </div> 
-
-          
+  <!-- card section -->
 
 
+ <section class=" container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 my-10 gap-10" >
 
+    <!-- card 1 -->
 
+    <div class="card w-50 py-5  bg-[#FFF] shadow-lg">
 
-
-        
-        <div class=" flex gap-2 items-center-center "> 
-    <img class="w-10" src="images/logo.png" alt="">
-
-    <h3 class=" text-[#FFF] text-4xl font-semibold ">Fruit Burst</h3>
-        </div>
-
-<!-- 
-        <div class="">
-         <input type="search" name="" id="">
-
-        </div> -->
-
-    </section>
+        <figure><img src="/images/fruit1.png" alt="Shoes" /></figure>
     
+        <div class="card-body items-center space-y-2">
+          <h2 class="card-title"> 12.90$ - 18.85$ </h2>
+          <hr>
+          <p>Apples</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <a href=""> <span class="text-[#F85559]">Details</span></a>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+
+
+    <!-- card 2 -->
+
+    <div class="card w-50 py-5 shadow-xl">
+
+        <figure><img src="/images/fruit2.png" alt="Shoes" /></figure>
+    
+        <div class="card-body items-center space-y-2">
+          <h2 class="card-title"> 12.90$ - 18.85$ </h2>
+          <hr>
+          <p>Orange</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <a href=""> <span class="text-[#F85559]">Details</span></a>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+
+      <!-- card 3 -->
+
+    <div class="card w-50 py-5 shadow-xl">
+
+        <figure><img src="/images/fruit3.png" alt="Shoes" /></figure>
+    
+        <div class="card-body items-center space-y-2">
+          <h2 class="card-title"> 12.90$ - 18.85$ </h2>
+          <hr>
+          <p>Red Dragon</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <a href=""> <span class="text-[#F85559]">Details</span></a>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+
+      <!-- card 4 -->
+
+      <div class="card w-50 py-5 shadow-xl">
+
+        <figure><img src="/images/fruit4.png" alt="Shoes" /></figure>
+    
+        <div class="card-body items-center space-y-2">
+          <h2 class="card-title"> 12.90$ - 18.85$ </h2>
+          <hr>
+          <p>Banana</p>
+          <div class="rating">
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+          </div>
+          <a href=""> <span class="text-[#F85559]">Details</span></a>
+          <div class="card-actions justify-end">
+          </div>
+        </div>
+      </div>
+ 
+ </section>
+
+
+ <!-- card section end -->
+
+
+
+ <!-- button  -->
+
+  <div class=" text-center my-5 ">
+    <button class=" btn btn-praimry pl-10 pr-10 text-[#FFFFFF] border-0 text-xs bg-[#F85559]">Shop all</button>
+  </div>
+
+  <!-- button end -->
+
+
+  <!-- team section start  -->
+
+  <div class=" container mx-auto my-20 hero min-h-screen" style="background-image: url(./images/team.png);">
+
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
         
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-extrabold">Meet the team section</h1>
+        <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        
+      </div>
+    </div>
 
-    </nav>
+    
 
-  <header></header>
+  </div>
 
-  <main></main>
+  
+
+  
+  
+
+  </main>
 
   <footer></footer>
 
